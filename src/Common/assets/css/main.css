@@ -91,7 +91,13 @@
 }
 
 .right-img {
+    padding: 28% 0%;
     background: #ecf3ff;
+    background-image: url('../image/doctor.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 100% !important;
 }
 
 /* .right-img img {
@@ -99,11 +105,11 @@
 } */
 
 .rate-card {
- 
+
     width: 10%;
     margin: 0 auto;
     position: absolute;
-    top: 10%;
+    top: 2%;
     left: 55%;
     border-radius: 16px;
     background: #182e70;
@@ -111,24 +117,235 @@
     border: none;
     box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
 }
-.success-card{
+
+.success-card {
     width: 25%;
     margin: 0 auto;
     position: absolute;
-    top: 85%;
+    top: 14%;
     left: 60%;
     border-radius: 16px;
     color: #FFF;
     border: none;
 }
-.success-card h3{
+
+.success-card h3 {
     font-size: 35px;
     line-height: 45px;
     color: #182e70;
 
 }
-.success-card p{
-    font-size: 25px;
-    line-height: 35px;
+
+.success-card p {
+    font-size: 20px;
+    line-height: 30px;
     color: #182e70;
+}
+
+.single-click {
+    background: #ecf3ff;
+}
+
+.click-content h1 {
+    font-size: 40px;
+    color: #2d2e5b;
+}
+
+.click-content p {
+    font-size: 16px;
+    color: #2d2e5b;
+    line-height: 26px;
+}
+
+.bg-img {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(red, yellow), lightgray 0px -281.55px / 100% 166.431%;
+    background-image: url('../image/bg-image.jpg');
+    /* Replace 'your-image-url.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-content {
+    padding-top: 75%;
+}
+
+.card-content h4 {
+    font-size: 25px;
+    color: #FFF;
+}
+
+.card-content p {
+    font-size: 15px;
+    color: #FFF;
+    line-height: 25px;
+}
+
+.reset-image {
+    padding: 25% 0%;
+    background-image: url('../image/doctor.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 100% !important;
+    margin: 20px 0px;
+    background: #ecf3ff;
+    border-radius: 0% 20% 0% 10%;
+}
+
+.assure .reset-content {
+    padding: 10% 4%;
+}
+
+.reset-assure h1 {
+    width: 75%;
+    font-size: 50px;
+    color: #2d2e5b;
+    font-weight: 500;
+}
+
+.reset-assure p {
+    width: 75%;
+    margin: 30px 0px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000;
+}
+
+.reset-assure h5 {
+    font-size: 15px;
+    color: #c4cad4;
+}
+
+.reset-assure h6 {
+    font-size: 18px;
+    color: #2d2e5b;
+}
+
+.appoinment {
+    margin-top: 50px;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 10px;
+    background: #182e70;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.available-card {
+    width: 15%;
+    padding: 10px;
+    border-radius: 0% 0% 20% 0%;
+    background: linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%);
+    position: absolute;
+    top: 22%;
+    left: 45%;
+
+}
+
+.available-card h5 {
+    font-size: 15px;
+    color: #2d2e5b;
+}
+
+.available-card h6 {
+    font-size: 12px;
+    color: #182e70;
+}
+
+.find-doctor button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background: #2d2e5b;
+    color: #FFF;
+}
+
+.schedules {
+    background: #ecf3ff;
+}
+
+.make-schedule {
+    padding: 25% 0%;
+    background-image: url('../image/doctor.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 100% !important;
+    margin: 20px 0px;
+    background: #c4cad4;
+    border-radius: 0% 20% 0% 10%;
+}
+
+.schedules .reset-content {
+    padding: 10% 8%;
+}
+
+.make-schedule button {
+    float: inline-end;
+    margin: 75% 5% 0% 0%;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 40px;
+    background: #99beff;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.online-session h1 {
+    font-size: 30px !important;
+    margin-bottom: 10px;
+}
+
+.online-session button {
+    margin-top: 30px;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 10px;
+    background: #182e70;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.online-session .reset-content {
+    padding: 18% 5% 0% 5%;
+}
+
+.online-image {
+    width: 100%;
+    padding: 25% 0%;
+    background-image: url('../image/dashboard.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    margin: 20% 0px;
+    background: #c4cad4;
+}
+.card-click{
+    background: #FFF !important;
+}
+.card-view {
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+}
+
+.card-session h5 {
+    font-size: 20px;
+    color: #2d2e5b;
+
+}
+
+.card-session p {
+    font-size: 16px;
+    color: #99beff;
+    line-height: 26px;
 }

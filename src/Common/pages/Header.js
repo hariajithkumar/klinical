@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
 import Logo from '../assets/image/Sahyatri-Matrimony-Logo.png';
+// import Logo from '../assets/image/logo.png';
+// import Logo from '../assets/image/logo-img.png';
 import '../assets/css/auth.css'
 // import { setClass1Hide } from '../../Redux/CreateSlice';
 import 'bootstrap/dist/css/bootstrap.min.css';

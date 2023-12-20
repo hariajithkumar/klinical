@@ -16,7 +16,7 @@ function Footer() {
                             <p>We are the most trusted matrimonial service for Indians, offering a wide range of matchmaking services.</p>
 
                         </div>
-                        <div className='col-lg-3 col-md-4 col-sm-4 col-6 py-3'>
+                        <div className='col-lg-3 col-md-4 col-sm-4 col-4 py-3'>
                             <ul className='footer-list p-0 float-lg-end float-md-none'>
                                 <li className='content-title'>Menu</li>
                                 <li>Packages</li>
@@ -25,7 +25,7 @@ function Footer() {
                                 <li>FAQ’S</li>
                             </ul>
                         </div>
-                        <div className='col-lg-3 col-md-4 col-sm-4 col-6 py-3'>
+                        <div className='col-lg-3 col-md-4 col-sm-4 col-4 py-3'>
                             <ul className='footer-list p-0 float-lg-end float-md-none'>
                                 <li className='content-title'>Privacy & You</li>
                                 <li>Terms of Use</li>
@@ -34,7 +34,7 @@ function Footer() {
                                 <li>FAQ’S</li>
                             </ul>
                         </div>
-                        <div className='col-lg-3 col-md-4 col-sm-4 col-6 py-3'>
+                        <div className='col-lg-3 col-md-4 col-sm-4 col-4 py-3'>
                             <ul className='footer-list p-0 float-lg-end float-md-none'>
                                 <li className='content-title mb-4'></li>
                                 <li>Member Login</li>
@@ -45,10 +45,10 @@ function Footer() {
                         </div>
                     </div>
                     <div className='row m-0 py-3 footer-bottom align-items-stretch justify-content-start'>
-                        <div className='col-lg-6 col-md-6 col-sm-12 col-12 text-lg-start text-center'>
+                        <div className='col-lg-6 col-12 text-lg-start text-center'>
                             <p>© 2023 KlinicQ inc</p>
                         </div>
-                        <div className='col-lg-6 col-md-6 col-sm-12  col-12 text-end'>
+                        <div className='col-lg-6 col-12 text-lg-end text-center'>
                             <ul id="footer-menu">
                                 <li>Terms of service</li>
                                 <li>Privacy Policy</li>

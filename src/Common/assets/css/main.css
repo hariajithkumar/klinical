@@ -368,6 +368,9 @@
 .nav-show ul li{
     padding: 10px ;
 }
+.section-start{
+    z-index: -100;
+}
 /* .klinic-logo{
     width: 15% !important;
 }
@@ -734,7 +737,7 @@
     }
 
     .rate-card {
-        width: 60%;
+        width: 65%;
         margin: 0 auto;
         position: absolute;
         top: 4.3%;

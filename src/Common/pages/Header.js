@@ -23,7 +23,7 @@ function Header() {
     }
     console.log(isClass1Show)
     return (
-        <div className='header-section'>
+        <div className='header-section position-sticky top-0 bg-white'>
             <header className='contaier-85'>
                 <div className='nav-section'>
                     <nav className="navbar navbar-expand-lg navbar-light">

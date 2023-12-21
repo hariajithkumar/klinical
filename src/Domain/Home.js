@@ -11,7 +11,7 @@ function Home() {
   return (
     <div className=''>
       <Header />
-      <section className='mb-5 position-relative'>
+      <section className='mb-5 position-relative section-start'>
         <div className='row m-0 align-items-stretch'>
           <div className='col-lg-7 col-12 h-50'>
             <div className='container-80 section-top'>

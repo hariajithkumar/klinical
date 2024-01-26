@@ -17,6 +17,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 // image path 
 import location from '../Common/assets/image/location.png'
+import Topmove from '../Common/pages/Topmove'
 
 function Product() {
 
@@ -37,10 +38,10 @@ function Product() {
             <section className='py-5'>
                 <div className='container-90'>
                     <div className='row m-0'>
-                        <div className='col-lg-6 col-12 text-center'>
+                        <div className='col-lg-6 col-12 text-center slide-left visible'>
                             <img src={product1} className='w-100 d-lg-block d-none' />
                         </div>
-                        <div className='col-lg-6 col-12 mt-lg-0 mt-5'>
+                        <div className='col-lg-6 col-12 mt-lg-0 mt-5 slide-right visible'>
                             <h1>Electronic Medical Records ( EMR )</h1>
                             <div className='img-responsive'>
                                 <img src={product1} className='w-100 d-lg-none d-block' />
@@ -57,7 +58,7 @@ function Product() {
                 <div className='bg-section'>
                     <div className='container-90'>
                         <div className='row m-0'>
-                            <div className='col-lg-6 col-12 mt-lg-0 lt-5'>
+                            <div className='col-lg-6 col-12 mt-lg-0 lt-5 slide-left visible'>
                                 <h1>Integrated Solution</h1>
                                 <div className='img-responsive'>
                                     <img src={product2} className='w-100 d-lg-none d-block' />
@@ -69,7 +70,7 @@ function Product() {
                                 <p>KlinicQ application APIs can integrate with any existing portals to update the details from KlinicQ and extract the information as per the security guidelines, so there is no need to replace the existing system.</p>
                                 <p>KlinicQ application is fully integrated between Doctors, Hospitals and patients and no need to duplicate the records </p>
                             </div>
-                            <div className='col-lg-6 col-12 text-center'>
+                            <div className='col-lg-6 col-12 text-center slide-right visible'>
                                 <img src={product2} className='w-100 d-lg-block d-none' />
                             </div>
                         </div>
@@ -77,10 +78,10 @@ function Product() {
                 </div>
                 <div className='container-90'>
                     <div className='row m-0'>
-                        <div className='col-lg-6 col-12 text-center'>
+                        <div className='col-lg-6 col-12 text-center slide-left visible'>
                             <img src={product3} className='w-100 d-lg-block d-none' />
                         </div>
-                        <div className='col-lg-6 col-12 mt-lg-0 mt-5'>
+                        <div className='col-lg-6 col-12 mt-lg-0 mt-5 slide-right visible'>
                             <h1>No expensive Hardware</h1>
                             <div className='img-responsive'>
                                     <img src={product3} className='w-100 d-lg-none d-block' />
@@ -94,7 +95,7 @@ function Product() {
                 <div className='bg-section'>
                     <div className='container-90'>
                         <div className='row m-0 flex-wrap-reverse'>
-                            <div className='col-lg-6 col-12 mt-lg-0 mt-5'>
+                            <div className='col-lg-6 col-12 mt-lg-0 mt-5 slide-left visible'>
                                 <h1>Easy Communication</h1>
                                 <div className='img-responsive'>
                                     <img src={product4} className='w-100 d-lg-none d-block' />
@@ -103,7 +104,7 @@ function Product() {
                                 <p>KlinicQ clinical management system sends notification and appointment status updates through SMS text messages.</p>
                                 <p>The KlinicQ application helps to set a reminder of critical appointment reminders for physicians, and automated reminders to patients on follow-up days will be sent through emails, including appointment details, promotional messages, and Health instructions for patient convenience.</p>
                             </div>
-                            <div className='col-lg-6 col-12 text-center'>
+                            <div className='col-lg-6 col-12 text-center slide-right visible'>
                                 <img src={product4} className='w-100 d-lg-block d-none' />
                             </div>
                         </div>
@@ -112,10 +113,10 @@ function Product() {
                 <div className='container-90'>
                     <h2>User Friendly Application</h2>
                     <div className='row m-0 pt-5'>
-                        <div className='col-lg-6 col-12 text-center'>
+                        <div className='col-lg-6 col-12 text-center slide-left visible'>
                             <img src={product5} className='w-100' />
                         </div>
-                        <div className='col-lg-6 col-12 mt-lg-0 mt-5'>
+                        <div className='col-lg-6 col-12 mt-lg-0 mt-5 slide-right visible'>
                             <p>The KlinicQ application can be accessed anywhere and anytime to view their consultation summary, vital details, health records and prescription details for up to 2 years from the day they start using the KlinicQ app.</p>
                             <p>The KlinicQ application calculates and provides BMI based on the vital details measured during check-in. Height, blood pressure, pulse, and weight are measured and can be viewed at any time.</p>
                             <p>The monitor connected to the Kiosk will display the queue list and status of each appointment, making it easier for the patients to check their turn.Traceability is easier with the KlinicQ application, as every visit has a unique appointment ID.</p>
@@ -127,6 +128,7 @@ function Product() {
                     </div>
                 </div>
             </section>
+            <Topmove />
             <Footer />
         </div>
     )

@@ -20,6 +20,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 // image path 
 import location from '../Common/assets/image/location.png'
+import Topmove from '../Common/pages/Topmove'
 
 function Benefits() {
 
@@ -38,8 +39,8 @@ function Benefits() {
             <hr className='m-0' style={{ color: '#D9F4FF' }} />
             <section className='py-5'>
                 <div className='container-90'>
-                    <div className='row m-0'>
-                        <div className='col-lg-6 col-12 pad-content'>
+                    <div className='row m-0 align-items-center'>
+                        <div className='col-lg-6 col-12  slide-left visible'>
                             <img src={benefits1} className='w-100 d-lg-block d-none'/>
                         </div>
                         <div className='col-lg-6 col-12'>
@@ -57,8 +58,8 @@ function Benefits() {
                 </div>
                 <div className='bg-section'>
                     <div className='container-90'>
-                        <div className='row m-0 '>
-                            <div className='col-lg-6 col-12'>
+                        <div className='row m-0 align-items-center'>
+                            <div className='col-lg-6 col-12 slide-left visible'>
                                 <h5>Increase Productivity</h5>
                                 <h1>Appointment System</h1>
                                 <div className='img-responsive'>
@@ -70,18 +71,18 @@ function Benefits() {
                                 <p>Managing social distancing and limiting the crowd by reducing the wait in the waiting room could reduce frustration and help improve staff satisfaction. The satisfied Staff help produce happy customers and deliver excellent service.</p>
 
                             </div>
-                            <div className='col-lg-6 col-12 pad-content'>
+                            <div className='col-lg-6 col-12 slide-right visible'>
                                 <img src={benefits2} className='w-100 d-lg-block d-none'/>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='container-90'>
-                    <div className='row m-0'>
-                        <div className='col-lg-6 col-12'>
+                    <div className='row m-0 align-items-center'>
+                        <div className='col-lg-6 col-12 slide-left visible'>
                             <img src={benefits3} className='w-100 d-lg-block d-none'/>
                         </div>
-                        <div className='col-lg-6 col-12'>
+                        <div className='col-lg-6 col-12 slide-right visible'>
                             <h5>Improve Service Quality</h5>
                             <h1>Building a trustworthiness to the Patients</h1>
                             <div className='img-responsive'>
@@ -98,8 +99,8 @@ function Benefits() {
                 </div>
                 <div className='bg-section'>
                     <div className='container-90'>
-                        <div className='row m-0 '>
-                            <div className='col-lg-6 col-12'>
+                        <div className='row m-0 align-items-center'>
+                            <div className='col-lg-6 col-12 slide-left visible'>
                                 <h5>Improve patient satisfaction</h5>
                                 <h1>Improve the quality of service to boost Patient Satisfaction</h1>
                                 <div className='img-responsive'>
@@ -109,18 +110,18 @@ function Benefits() {
                                 <p>Our KlinicQ Clinical Management System token & appointment scheduling function saves visitors and physicians time effectively customers by allowing them to check their token status at their own convenience on their mobile devices so that the visitors use their time efficiently rather than wait in the waiting room.</p>
                                 <p>Our Clinical Management System is designed based on understanding the customer’s needs, and best practices followed across most hospitals/Clinics, which helps your business create an opportunity to build a long-lasting relationship with the customers.</p>
                             </div>
-                            <div className='col-lg-6 col-12'>
+                            <div className='col-lg-6 col-12 slide-right visible'>
                                 <img src={benefits4} className='w-100 d-lg-block d-none'/>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='container-90'>
-                    <div className='row m-0'>
-                        <div className='col-lg-6 col-12'>
+                    <div className='row m-0 align-items-center'>
+                        <div className='col-lg-6 col-12 slide-left visible'>
                             <img src={benefits5} className='w-100 d-lg-block d-none'/>
                         </div>
-                        <div className='col-lg-6 col-12'>
+                        <div className='col-lg-6 col-12 slide-right visible'>
                             <h5>No wait at waiting room </h5>
                             <h1>Improve the quality of service to boost Patient Satisfaction</h1>
                             <div className='img-responsive'>
@@ -135,8 +136,8 @@ function Benefits() {
                 </div>
                 <div className='bg-section'>
                     <div className='container-90'>
-                        <div className='row m-0 '>
-                            <div className='col-lg-6 col-12'>
+                        <div className='row m-0 align-items-center'>
+                            <div className='col-lg-6 col-12 slide-left visible'>
                                 <h1>Improve Data Security</h1>
                                 <div className='img-responsive'>
                                     <img src={benefits6} className='w-100 d-lg-none d-block' />
@@ -146,18 +147,18 @@ function Benefits() {
                                 <p>Our Clinical Management System has stringent access controls, and every registration record is verified by us and monitored to ensure the reliability of the data. Our technical team continuously follows intense technical protocols and vulnerability measures to provide secure service and protect customer data.</p>
 
                             </div>
-                            <div className='col-lg-6 col-12'>
+                            <div className='col-lg-6 col-12 slide-right visible'>
                                 <img src={benefits6} className='w-100 d-lg-block d-none'/>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='container-90'>
-                    <div className='row m-0'>
-                        <div className='col-lg-6 col-12'>
+                    <div className='row m-0 align-items-center'>
+                        <div className='col-lg-6 col-12 slide-left visible'>
                             <img src={benefits7} className='w-100 d-lg-block d-none'/>
                         </div>
-                        <div className='col-lg-6 col-12'>
+                        <div className='col-lg-6 col-12 slide-right visible'>
                             <h5>No wait at waiting room </h5>
                             <h1>Data Analytics & Insight</h1>
                             <div className='img-responsive'>
@@ -173,8 +174,8 @@ function Benefits() {
                 </div>
                 <div className='bg-section'>
                     <div className='container-90'>
-                        <div className='row m-0 '>
-                            <div className='col-lg-6 col-12'>
+                        <div className='row m-0 align-items-center'>
+                            <div className='col-lg-6 col-12 slide-left visible'>
                                 <h1>Improve Sustainability</h1>
                                 <div className='img-responsive'>
                                     <img src={benefits8} className='w-100 d-lg-none d-block' />
@@ -184,13 +185,14 @@ function Benefits() {
                                 <p>Patient care with a reduction in errors &amp; elimination of duplication. Our solution is customizable and scalable electronic medical records that can grow with your medical practice.</p>
                                 <p>KlinicQ application can quickly transfer patient data from one system. It helps in the space-saving of a digital records environment, and it helps to reduce operational costs such as transcription services.</p>
                             </div>
-                            <div className='col-lg-6 col-12'>
+                            <div className='col-lg-6 col-12 slide-right visible'>
                                 <img src={benefits8} className='w-100 d-lg-block d-none'/>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <Topmove />
             <Footer />
         </div>
     )

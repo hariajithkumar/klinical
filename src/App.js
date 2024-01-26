@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './Domain/Login'
 import Register from './Domain/Register'
@@ -15,23 +16,48 @@ import Hospitals from './Domain/Hospitals';
 import Doctor from './Domain/Doctor';
 
 function App() {
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+      const cards = document.querySelectorAll('.slide-up, .slide-left, .slide-right');
+      cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        const isVisible = rect.top <= window.innerHeight * 0.75;
+
+        if (isVisible) {
+          card.classList.add('visible');
+        } else {
+          card.classList.remove('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/REACT-JS/klinicq'>
       <Routes>
         <Route path='' element={<Home />} />
         <Route path='/register' element={<Register />} />
-        <Route path='/login' element={<Login />}/>
+        <Route path='/login' element={<Login />} />
         {/* <Route path='/header' element={<Header />} /> */}
-        <Route path='about' element={<About />}/>
-        <Route path='bookusappointemnt' element={<Bookappointment />}/>
-        <Route path='contact' element={<Contact />}/>
-        <Route path='product' element={<Product />}/>
-        <Route path='feature' element={<Feature />}/>
-        <Route path='appointment' element={<Appointment />}/>
-        <Route path='benefits' element={<Benefits />}/>
-        <Route path='patients' element={<Patients />}/>
-        <Route path='hospitals' element={<Hospitals />}/>
-        <Route path='doctor' element={<Doctor />}/>
+        <Route path='about' element={<About />} />
+        <Route path='bookusappointemnt' element={<Bookappointment />} />
+        <Route path='contact' element={<Contact />} />
+        <Route path='product' element={<Product />} />
+        <Route path='feature' element={<Feature />} />
+        <Route path='appointment' element={<Appointment />} />
+        <Route path='benefits' element={<Benefits />} />
+        <Route path='patients' element={<Patients />} />
+        <Route path='hospitals' element={<Hospitals />} />
+        <Route path='doctor' element={<Doctor />} />
 
       </Routes>
     </BrowserRouter>

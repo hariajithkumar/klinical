@@ -28,6 +28,7 @@ import arrowupblack from '../Common/assets/image/blackarrow.png'
 import online from '../Common/assets/image/online.png'
 import patient4 from '../Common/assets/image/patient4.png'
 import patient5 from '../Common/assets/image/patient5.png'
+import Topmove from '../Common/pages/Topmove';
 
 function Home() {
 
@@ -41,7 +42,7 @@ function Home() {
       <section className='position-relative section-start'>
         <div className='position-relative'>
           <div className='row m-0 align-items-center'>
-            <div className='col-lg-7 col-12 h-50'>
+            <div className='col-lg-7 col-12 h-50 '>
               <div className='container-75 section-top'>
                 <h3>KlinicQ is distinguished as the leading clinic providing outstanding online medical treatment services.</h3>
                 <div className='d-flex align-items-center scheduel-section'>
@@ -75,13 +76,13 @@ function Home() {
         <div className='single-click py-5'>
           <div className='container-85'>
             <div className='row m-0'>
-              <div className='col-lg-3 col-12 mb-lg-0 mb-3'>
+              <div className='col-lg-3 col-12 mb-lg-0 mb-3 slide-left visible'>
                 <h1>Fostering Wellness with a Single Click </h1>
               </div>
-              <div className='col-lg-7 col-12 py-lg-0 py-md-0 py-2'>
+              <div className='col-lg-7 col-12 py-lg-0 py-md-0 py-2 slide-right visible'>
                 <p>KlinicQ is our Electronic Clinical Management System (e CMS) application. Electronic Clinical Management System (e CMS) application. It is user-friendly, convenient, comprehensive, and integrated to manage all hospital operations safely and with no manual error usually associated with handwriting & paper-based records.</p>
               </div>
-              <div className='col-2 d-lg-block d-md-block d-none'>
+              <div className='col-2 d-lg-block d-md-block d-none slide-right visible'>
                 <div className='arrow-section'>
                   <FontAwesomeIcon icon={faArrowRight} spin style={{ color: '#FFF' }} className='icon' />
                 </div>
@@ -93,7 +94,7 @@ function Home() {
         <div className='hospital-details py-5'>
           <div className='container-85'>
             <div className='row m-0 align-items-stretch justify-content-center'>
-              <div className='col-lg-4 col-md-6 col-sm-6 col-12'>
+              <div className='col-lg-4 col-md-6 col-sm-6 col-12 slide-left visible'>
                 <div className='patient px-2'>
                   <div className='img-section'>
                     <img src={doctor1} className='w-100' />
@@ -126,7 +127,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-4 col-md-6 col-sm-6 col-12 my-lg-0 my-md-2 my-sm-2'>
+              <div className='col-lg-4 col-md-6 col-sm-6 col-12 my-lg-0 my-md-2 my-sm-2 slide-right visible'>
                 <div className='patient px-2'>
                   <div className='img-section'>
                     <img src={doctor3} className='w-100' />
@@ -142,7 +143,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className='fliter-section py-5'>
+        <div className='fliter-section py-5 slide-left visible'>
           <div className='container-85'>
             <div className='box'>
               <div className='search-list search-option'>
@@ -197,10 +198,10 @@ function Home() {
           </div>
 
         </div>
-        <div className='logo-slider container-90'>
+        <div className='logo-slider container-90 slide-right visible'>
           <LogoSlider />
         </div>
-        <div className='map-location container-85 py-5'>
+        <div className='map-location container-85 py-5 slide-left visible'>
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15665.489968312286!2d76.9576647!3d11.010654!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8591fc2b091d3%3A0xae8a5f0b335f380a!2sWebbitech!5e0!3m2!1sen!2sin!4v1706012852448!5m2!1sen!2sin" width="100%" height="450" style={{ border: 0, width: '100%' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <hr />
@@ -210,7 +211,7 @@ function Home() {
         <div className='rest-section py-lg-5 py-md-4 py-0'>
           <div className='container-90'>
             <div className='row m-0'>
-              <div className='col-lg-6 col-12'>
+              <div className='col-lg-6 col-12 slide-left visible'>
                 <h1 className='mb-4'>Rest assured, your health is in the most capable hands.</h1>
                 <p className='mb-3'>With medical professionals in more than 100+ countries and a 98% customer satisfaction rate, Doctoralia offers reliable health information. With an extensive network of doctors, we are able to offer a wide range of high quality medical tests. What's more, our prices are up to 70% cheaper than other online providers.</p>
                 <div className='d-flex'>
@@ -243,7 +244,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-6 col-12 text-end position-relative'>
+              <div className='col-lg-6 col-12 text-end position-relative slide-right visible'>
                 <img src={rest3} className='rest3' />
                 <div className='available'>
                   <div className='d-flex align-items-center p-lg-3 p-md-3 p-1'>
@@ -277,13 +278,13 @@ function Home() {
         </div>
         <div className='online-section py-5'>
           <div className='container-80'>
-            <div className='row m-0'>
-              <div className='col-lg-6 col-12 pad-section'>
+            <div className='row m-0 align-items-center'>
+              <div className='col-lg-6 col-12 slide-left visible'>
                 <h1>Get 15-Minutes Complimentary online session.</h1>
                 <p>Limited Period Offer. Claim Now.</p>
                 <button>Book Appoinment <img src={arrowup} /></button>
               </div>
-              <div className='col-lg-6  col-12 '>
+              <div className='col-lg-6  col-12 slide-right visible'>
                 <img src={online} className='w-100' />
               </div>
             </div>
@@ -293,13 +294,13 @@ function Home() {
         <div className='single-click py-5'>
           <div className='container-85'>
             <div className='row m-0'>
-              <div className='col-lg-3 col-12 mb-lg-0 mb-3'>
+              <div className='col-lg-3 col-12 mb-lg-0 mb-3 slide-left visible'>
                 <h1>Fostering Wellness with a Single Click </h1>
               </div>
               <div className='col-lg-7 col-12 py-lg-0 py-md-0 py-2'>
                 <p>Electronic Clinical Management System (e CMS) application. It is user-friendly, convenient, comprehensive, and integrated to manage all hospital operations safely and with no manual error usually associated with handwriting & paper-based records.</p>
               </div>
-              <div className='col-2 d-lg-block d-md-block d-none'>
+              <div className='col-2 d-lg-block d-md-block d-none slide-right visible'>
                 <div className='arrow-section'>
                   <FontAwesomeIcon icon={faArrowRight} spin style={{ color: '#FFF' }} className='icon' />
                 </div>
@@ -310,7 +311,7 @@ function Home() {
         <div className='patient-section py-5'>
           <div className='container-85'>
             <div className='row m-0 '>
-              <div className='col-lg-7  col-12 d-flex align-items-stretch'>
+              <div className='col-lg-7  col-12 d-flex align-items-stretch slide-left visible'>
                 <div class="card" >
                   <img src={patient4} class="card-img-top" alt="..." />
                   <div class="card-body">
@@ -328,7 +329,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className='col-lg-5 col-12 my-lg-0 my-2'>
+              <div className='col-lg-5 col-12 my-lg-0 my-2 slide-right visible'>
                 <div class="card" >
                   <img src={patient5} class="card-img-top" alt="..." />
                   <div class="card-body">
@@ -350,6 +351,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Topmove />
       <Footer />
     </div>
   )

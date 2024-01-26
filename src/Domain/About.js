@@ -12,6 +12,7 @@ import profile1 from '../Common/assets/image/company-profile.png'
 import profile2 from '../Common/assets/image/profile2.png'
 import profile3 from '../Common/assets/image/profile3.png'
 import timeline from '../Common/assets/image/time-line.png'
+import Topmove from '../Common/pages/Topmove'
 
 function About() {
 
@@ -30,7 +31,7 @@ function About() {
             <section className='about-section'>
                 <div className='container-90 vision-section py-5'>
                     <div className='row m-0 position-relative'>
-                        <div className='col-lg-6 col-12'>
+                        <div className='col-lg-6 col-12 slide-left visible'>
                             <h1>Our Vision & Mission</h1>
                             <div className='img-responsive'>
                                 <img src={about1} className='w-100 d-lg-none d-block' />
@@ -41,7 +42,7 @@ function About() {
                             <h5>Vision</h5>
                             <p>Our goal is to add business value to customers in Information Technology </p>
                         </div>
-                        <div className='col-lg-6 col-12 ps-5'>
+                        <div className='col-lg-6 col-12 ps-5 '>
                             <img src={about1} className='w-100 d-lg-block d-none' />
                             <div className='total-vision'>
                                 <img src={vision1} />
@@ -54,10 +55,10 @@ function About() {
                 <hr className='m-0' style={{ color: '#D9F4FF' }} />
                 <div className='company-section container-90'>
                     <div className='row m-0'>
-                        <div className='col-lg-6 col-12'>
+                        <div className='col-lg-6 col-12 slide-left visible'>
                             <img src={profile1} className='w-100 d-lg-block d-none' />
                         </div>
-                        <div className='col-lg-6 col-12 content-company'>
+                        <div className='col-lg-6 col-12 slide-right visible content-company'>
                             <h1>Company Profile</h1>
                             <div className='img-responsive'>
                                 <img src={profile1} className='w-100 d-lg-none d-block' />
@@ -71,7 +72,7 @@ function About() {
                 </div>
                 <div className='company-section container-90'>
                     <div className='row m-0'>
-                        <div className='col-lg-6 col-12 content-company'>
+                        <div className='col-lg-6 col-12 slide-left visible content-company'>
                             <h1>About KlinicQ</h1>
                             <div className='img-responsive'>
                                 <img src={profile2} className='w-100 d-lg-none d-block' />
@@ -80,17 +81,17 @@ function About() {
                             <p>KlinicQ application has been developed based on the best practices around the world. KlinicQ algorithm is designed to solve a fundamental and global human problem, which is wasting time waiting in line. The convenience of saving time is one of the best aspects of modern technology. It provides a solution to the outdated practice of waiting in line. </p>
                             <p>KlinicQ application helps to organize the doctor schedules, collate patient notes, health history, medical records, patient records, and other critical metrics in real-time, and handling payment is effortless. Patients can find doctors based on their specialization and book online appointments through mobile apps, phone calls, or walk-ins based on specialty and waiting time. </p>
                         </div>
-                        <div className='col-lg-6 col-12'>
+                        <div className='col-lg-6 col-12 slide-right visible'>
                             <img src={profile2} className='w-100 d-lg-block d-none' />
                         </div>
                     </div>
                 </div>
                 <div className='company-section container-90'>
                     <div className='row m-0'>
-                        <div className='col-lg-6 col-12'>
+                        <div className='col-lg-6 col-12 slide-left visible'>
                             <img src={profile3} className='w-100 d-lg-block d-none' />
                         </div>
-                        <div className='col-lg-6 col-12 content-company'>
+                        <div className='col-lg-6 col-12 slide-right visible content-company'>
                             <h1>Why KlinicQ ?</h1>
                             <div className='img-responsive'>
                                 <img src={profile3} className='w-100 d-lg-none d-block' />
@@ -102,17 +103,17 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className='container-90 time-line position-relative'>
+                <div className='container-90 time-line position-relative d-lg-block d-md-block d-none'>
                     <h1 className='py-5 text-center'>Product Road Map</h1>
                     <div className='time-content'>
                         <img src={timeline} className='w-100' />
-                        <h1 className='year1'>2022</h1>
-                        <div className='content1'>
+                        <h1 className='year1 slide-left visible'>2022</h1>
+                        <div className='content1 slide-left visible'>
                             <p>KlinicQ web application for Clinical management system is developed</p>
                         </div>
 
-                        <h1 className='year2'>2023</h1>
-                        <div className='content2'>
+                        <h1 className='year2 slide-left visible'>2023</h1>
+                        <div className='content2 slide-left visible'>
                             <p>KlinicQ andorid & IOS application is developed for Physician, Hospital & Doctors</p>
                         </div>
 
@@ -121,13 +122,13 @@ function About() {
                             <p>In-pateint, Pharmacy & Laboratory application will be deployed</p>
                         </div>
 
-                        <h1 className='year4'>2025</h1>
-                        <div className='content4'>
+                        <h1 className='year4 slide-right visible'>2025</h1>
+                        <div className='content4 slide-right visible'>
                             <p>e-Commerce application for Hospitals, Pharmacy & Laboratory</p>
                         </div>
 
-                        <h1 className='year5'>2026</h1>
-                        <div className='content5'>
+                        <h1 className='year5 slide-right visible'>2026</h1>
+                        <div className='content5 slide-right visible'>
                             <p>One in All solution for healthcare services</p>
                         </div>
 
@@ -135,6 +136,7 @@ function About() {
 
                 </div>
             </section>
+            <Topmove />
             <Footer />
         </div>
     )

@@ -11,6 +11,7 @@ import book2 from '../Common/assets/image/book2.png'
 import book3 from '../Common/assets/image/book3.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import Topmove from '../Common/pages/Topmove'
 
 function Bookappointment() {
 
@@ -102,6 +103,7 @@ function Bookappointment() {
                     </div>
                 </div>
             </section>
+            <Topmove />
             <Footer />
         </div>
     )

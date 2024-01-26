@@ -14,6 +14,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 // image path 
 import location from '../Common/assets/image/location.png'
+import Topmove from '../Common/pages/Topmove'
 
 function Contact() {
 
@@ -112,6 +113,7 @@ function Contact() {
                     </div>
                 </div>
             </section>
+            <Topmove />
             <Footer />
         </div>
     )

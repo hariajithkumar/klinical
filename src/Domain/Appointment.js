@@ -16,6 +16,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 // image path 
 import location from '../Common/assets/image/location.png'
+import Topmove from '../Common/pages/Topmove'
 
 function Appointment() {
 
@@ -35,10 +36,10 @@ function Appointment() {
             <section className='py-5'>
                 <div className='container-90'>
                     <div className='row m-0'>
-                        <div className='col-lg-6  col-12'>
+                        <div className='col-lg-6  col-12 slide-left visible'>
                             <img src={appointment1} className='w-100 d-lg-block d-none'/>
                         </div>
-                        <div className='col-lg-6  col-12'>
+                        <div className='col-lg-6  col-12 slide-right visible'>
                             <h1>Token System</h1>
                             <div className='img-responsive'>
                                 <img src={appointment1} className='w-100 d-lg-none d-block' />
@@ -55,7 +56,7 @@ function Appointment() {
                 <div className='bg-section'>
                     <div className='container-90'>
                         <div className='row m-0 '>
-                            <div className='col-lg-6  col-12'>
+                            <div className='col-lg-6  col-12 slide-left visible'>
                                 <h1>Appointment System</h1>
                                 <div className='img-responsive'>
                                     <img src={appointment2} className='w-100 d-lg-none d-block' />
@@ -68,7 +69,7 @@ function Appointment() {
                                 <p>Reschedule or cancel the appointment in a mobile app to reduce no-shows; the availability slots will be updated accordingly.</p>
                                 <p>For appointment services, online payment or pay-at-clinic options are defined by the individual hospitals, and accordingly, the workflow triggers the payment options.</p>
                             </div>
-                            <div className='col-lg-6  col-12'>
+                            <div className='col-lg-6  col-12 slide-right visible'>
                                 <img src={appointment2} className='w-100 d-lg-block d-none'/>
                             </div>
                         </div>
@@ -76,10 +77,10 @@ function Appointment() {
                 </div>
                 <div className='container-90'>
                     <div className='row m-0'>
-                        <div className='col-lg-6  col-12'>
+                        <div className='col-lg-6  col-12 slide-left visible'>
                             <img src={appointment3} className='w-100 d-lg-block d-none'/>
                         </div>
-                        <div className='col-lg-6  col-12'>
+                        <div className='col-lg-6  col-12 slide-right visible'>
                             <h1>Tele-Consultation</h1>
                             <div className='img-responsive'>
                                 <img src={appointment3} className='w-100 d-lg-none d-block' />
@@ -96,7 +97,7 @@ function Appointment() {
                 <div className='bg-section'>
                     <div className='container-90'>
                         <div className='row m-0 '>
-                            <div className='col-lg-6  col-12'>
+                            <div className='col-lg-6  col-12 slide-left visible'>
                                 <h1>In/ Outpatient Management</h1>
                                 <div className='img-responsive'>
                                     <img src={appointment4} className='w-100 d-lg-none d-block' />
@@ -108,7 +109,7 @@ function Appointment() {
                                 <p>The KlinicQ application supports patient Billing services, manages invoices and payment due, and generates reports and analytics to provide insights into operations.</p>
                                 <p>Doctors/Nurses can electronically prescribe drugs, and it is possible to eliminate the wrong medication prescribed to patients.</p>
                             </div>
-                            <div className='col-lg-6  col-12'>
+                            <div className='col-lg-6  col-12 slide-right visible'>
                                 <img src={appointment4} className='w-100 d-lg-block d-none'/>
                             </div>
                         </div>
@@ -116,6 +117,7 @@ function Appointment() {
                 </div>
 
             </section>
+            <Topmove />
             <Footer />
         </div>
     )

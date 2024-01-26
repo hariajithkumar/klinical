@@ -18,6 +18,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 // image path 
 import location from '../Common/assets/image/location.png'
+import Topmove from '../Common/pages/Topmove'
 
 function Feature() {
 
@@ -37,11 +38,11 @@ function Feature() {
             <hr className='m-0' style={{ color: '#D9F4FF' }} />
             <section className='py-5'>
                 <div className='container-90'>
-                    <div className='row m-0'>
-                        <div className='col-lg-6 col-12'>
+                    <div className='row m-0 align-items-center'>
+                        <div className='col-lg-6 col-12 slide-left visible'>
                             <img src={product6} className='w-100 d-lg-block d-none' />
                         </div>
-                        <div className='col-lg-6 col-12 pad-content'>
+                        <div className='col-lg-6 col-12 slide-right visible '>
                             <h1>Privacy & Security</h1>
                             <div className='img-responsive'>
                                 <img src={product6} className='w-100 d-lg-none d-block' />
@@ -53,8 +54,8 @@ function Feature() {
                 </div>
                 <div className='bg-section'>
                     <div className='container-90'>
-                        <div className='row m-0 '>
-                            <div className='col-lg-6 col-12 pad-content'>
+                        <div className='row m-0 align-items-center'>
+                            <div className='col-lg-6 col-12 slide-left visible'>
                                 <h1>Resource planning & Scheduling</h1>
                                 <div className='img-responsive'>
                                     <img src={product7} className='w-100 d-lg-none d-block' />
@@ -62,18 +63,18 @@ function Feature() {
                                 <p>The KlinicQ application's scheduling function helps to do resource planning and to manage hospitals/clinic and doctor's schedules effectively by day, week, and month to avoid overlapping & overbooking.</p>
                                 <p>The KlinicQ application's appointment scheduling function helps to schedule for doctors based on their availability automatically.</p>
                             </div>
-                            <div className='col-lg-6 col-12'>
+                            <div className='col-lg-6 col-12 slide-right visible'>
                                 <img src={product7} className='w-100 d-lg-block d-none' />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='container-90'>
-                    <div className='row m-0'>
-                        <div className='col-lg-6 col-12'>
+                    <div className='row m-0 align-items-center'>
+                        <div className='col-lg-6 col-12 slide-left visible'>
                             <img src={product8} className='w-100 d-lg-block d-none' />
                         </div>
-                        <div className='col-lg-6 col-12 pad-content'>
+                        <div className='col-lg-6 col-12 slide-right visible'>
                             <h1>Billing & Payments</h1>
                             <div className='img-responsive'>
                                 <img src={product8} className='w-100 d-lg-none d-block' />
@@ -86,7 +87,7 @@ function Feature() {
                 <div className='bg-section'>
                     <div className='container-90'>
                         <div className='row m-0 '>
-                            <div className='col-lg-6 col-12 py-5'>
+                            <div className='col-lg-6 col-12 py-5 slide-left visible'>
                                 <h1>Data Analytics & KPI Reports</h1>
                                 <div className='img-responsive'>
                                     <img src={product9} className='w-100 d-lg-none d-block' />
@@ -95,7 +96,7 @@ function Feature() {
                                 <p>Our Clinical Management System has been designed with various KPI reports and trends based on average waiting times, consulting time, clinical records, pharmacy & laboratory records, etc., to do analysis and improve it.</p>
                                 <p>KlinicQ applications analyze the real-time data of Patient visit trends based on locations, and these analytics insights features provide customers with habits who aren't showing up and who are returning.</p>
                             </div>
-                            <div className='col-lg-6 col-12'>
+                            <div className='col-lg-6 col-12 slide-right visible'>
                                 <img src={product9} className='w-100 d-lg-block d-none' />
                             </div>
                         </div>
@@ -103,10 +104,10 @@ function Feature() {
                 </div>
                 <div className='container-90'>
                     <div className='row m-0'>
-                        <div className='col-lg-6 col-12'>
+                        <div className='col-lg-6 col-12 slide-left visible'>
                             <img src={product10} className='w-100 d-lg-block d-none' />
                         </div>
-                        <div className='col-lg-6 col-12 '>
+                        <div className='col-lg-6 col-12 slide-right visible'>
                             <h1>Appointment Scheduling</h1>
                             <div className='img-responsive'>
                                 <img src={product10} className='w-100 d-lg-none d-block' />
@@ -119,8 +120,8 @@ function Feature() {
                     </div>
                 </div>
                 <div className='container-90 my-5'>
-                    <div className='row m-0 '>
-                        <div className='col-lg-6 col-12 pad-content'>
+                    <div className='row m-0 align-items-center'>
+                        <div className='col-lg-6 col-12 slide-left visible'>
                             <h1>Kiosk integration capability</h1>
                             <div className='img-responsive'>
                                 <img src={product11} className='w-100 d-lg-none d-block' />
@@ -128,12 +129,13 @@ function Feature() {
                             <p>Kiosks in the hospital waiting room allow customers to add themselves to a queue without staff assistance. On the touchscreen, patients can enter their phone number or scan the QR code to retrieve their appointment and the monitor connected to the Kiosk will display each appointment's queue list and status.</p>
                             <p>Patient's vital details can be measured at the Kiosk system. The vital blood pressure, pulse, height, weight, and BMI details can be automatically transferred to the KlinicQ app for the appointment visit.</p>
                         </div>
-                        <div className='col-lg-6 col-12'>
+                        <div className='col-lg-6 col-12 slide-right visible'>
                             <img src={product11} className='w-100 d-lg-block d-none' />
                         </div>
                     </div>
                 </div>
             </section>
+            <Topmove />
             <Footer />
         </div>
     )

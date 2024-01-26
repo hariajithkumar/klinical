@@ -1,28 +1,139 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: Urbanist !important;
+    font-style: normal;
+
 }
 
-.contaier-90{
+.contaier-90 {
     max-width: 90%;
     margin: 0 auto;
 }
-.contaier-80{
+
+.contaier-80 {
     max-width: 80%;
     margin: 0 auto;
 }
-.contaier-85{
+
+.contaier-85 {
     max-width: 85%;
     margin: 0 auto;
 }
-.navlist ul li a{
-    padding: 0px 30px;
-    /* color: #000 !important; */
-}
-.navlist ul li a:hover{
-    color: red !important;
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+/* header css start  */
+.sticky-element {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background: #F5FCFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    transition: all 500ms ease;
+    animation-duration: 500ms;
+    animation-name: fadeInDown;
+}
+
+.nav-element {
+    position: relative;
+    z-index: 999;
+}
+
+.header-section {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+}
+
+/* .nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} */
+/* ul li{
+    display: flex;
+    align-items: center;
+} */
+.nav-show{
+    display: block !important;
+    background: #01285C;
+    /* background: linear-gradient(180deg, #F0FAFF 0%, rgba(204, 238, 255, 0.00) 100%); */
+    
+}
+.nav-show ul li .custom-active{
+    color: #FFF !important;
+}
+.nav-show ul li .active {
+    color: #FFF !important;
+    
+}
+.nav-show ul li{
+    margin: 10px 0px;
+}
+.navlist ul li a {
+    padding: 0px 15px;
+    /* color: #000 !important; */
+}
+
+.navlist ul li .custom-active {
+    color: #000 ;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.navlist ul li .active {
+    color: #00275A;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.navlist ul li .active::after {
+    content: "\A";
+    border-radius: 0.375rem;
+    height: 0.35rem;
+    width: 0.35rem;
+    background: #00275A;
+    display: inline-block;
+    position: relative;
+    top: 18px;
+    right: 35px;
+}
+
+.navlist ul li a:hover {
+    color: #00275A !important;
+}
+
+.book-btn button {
+    padding: 15px 47px;
+    border-radius: 3px;
+    background: #01285C;
+    color: var(--White, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
 
 /* footer css start  */
 footer {
@@ -45,14 +156,31 @@ footer {
     /* 177.273% */
 }
 
+.social-logo li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFF;
+}
+
+.social-logo li a img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .footer-top .content-title {
     padding-bottom: 10px;
-    color: #FFF;
-    font-family: DM Sans;
-    font-size: 18px !important;
+    color: #3EA9E0;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
     /* 27px */
 }
 
@@ -62,39 +190,50 @@ footer {
 
 .footer-list li {
     padding: 10px 0px;
-    color: #FFF;
-    font-family: DM Sans;
-    font-size: 14px;
-    font-style: normal;
+    color: var(--White, #FFF);
+    font-size: 16px;
     font-weight: 500;
-    line-height: 150%;
-    /* 21px */
+    line-height: normal;
 }
 
 .footer-bottom p {
-    color: #FFF;
-    font-family: DM Sans;
-    font-size: 14px;
-    font-style: normal;
+    color: var(--White, #FFF);
+    font-size: 16px;
     font-weight: 500;
-    line-height: 150%;
-    /* 21px */
+    line-height: normal;
+}
+
+.footer-bottom ul li {
+    color: #3EA9E0 !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .footer-bottom img {
     padding-left: 10px;
 }
-#footer-menu li{
+
+#footer-menu li {
     display: inline;
     color: #FFF;
     padding: 0px 20px;
 }
 
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
 
     .footer-top {
         padding: 30px 0px;
+    }
+
+} */
+
+@media only screen and (min-width: 300px) and (max-width:576px) {
+
+ #footer-menu li {
+        display: block;
+        padding: 5px 0px;
     }
 
 }

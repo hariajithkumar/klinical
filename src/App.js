@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './Domain/Login'
-import Register from './Domain/Register'
 import Home from './Domain/Home';
 import Header from './Common/pages/Header';
 import About from './Domain/About';
@@ -45,9 +43,6 @@ function App() {
     <BrowserRouter basename='/REACT-JS/klinicq'>
       <Routes>
         <Route path='' element={<Home />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/login' element={<Login />} />
-        {/* <Route path='/header' element={<Header />} /> */}
         <Route path='about' element={<About />} />
         <Route path='bookusappointemnt' element={<Bookappointment />} />
         <Route path='contact' element={<Contact />} />

@@ -16,13 +16,19 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import location from '../Common/assets/image/location.png'
 import Topmove from '../Common/pages/Topmove'
 
+import { useDispatch, useSelector } from 'react-redux'
+import { setClass1Hide } from '../Redux/CreateSlice'
+
 function Contact() {
 
-    
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+    const { isClass1Show } = useSelector((state) => state.klinical)
+    const dispatch = useDispatch();
 
+    useEffect(() => {
+        dispatch(setClass1Hide(false))
+        window.scrollTo(0, 0);
+
+    }, []);
 
     return (
         <div className='contact-section'>
@@ -91,7 +97,7 @@ function Contact() {
                                 </div>
                                 <div className='check-section'>
                                     <h1>Services</h1>
-                                    <input type='checkbox' /> <span>Hospital Mangement</span><br/>
+                                    <input type='checkbox' /> <span>Hospital Mangement</span><br />
                                     <input type='checkbox' className='' /> <span>Clinic Mangement</span><br />
                                     <input type='checkbox' className='mt-3' /> <span>User Mangement</span>
                                 </div>

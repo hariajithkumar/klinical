@@ -16,11 +16,19 @@ import klinicq4 from '../Common/assets/image/klinicq4.png'
 import klinicq5 from '../Common/assets/image/klinicq5.png'
 import Topmove from '../Common/pages/Topmove'
 
+import { useDispatch, useSelector } from 'react-redux'
+import { setClass1Hide } from '../Redux/CreateSlice'
+
 function Doctor() {
 
 
+    const { isClass1Show } = useSelector((state) => state.klinical)
+    const dispatch = useDispatch();
+
     useEffect(() => {
+        dispatch(setClass1Hide(false))
         window.scrollTo(0, 0);
+
     }, []);
 
 

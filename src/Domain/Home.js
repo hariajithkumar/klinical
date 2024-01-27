@@ -30,11 +30,21 @@ import patient4 from '../Common/assets/image/patient4.png'
 import patient5 from '../Common/assets/image/patient5.png'
 import Topmove from '../Common/pages/Topmove';
 
+
+import { useDispatch, useSelector } from 'react-redux'
+import { setClass1Hide } from '../Redux/CreateSlice'
+
 function Home() {
 
+  const { isClass1Show } = useSelector((state) => state.klinical)
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    window.scrollTo(0, 0);
+      dispatch(setClass1Hide(false))
+      window.scrollTo(0, 0);
+
   }, []);
+
 
   return (
     <div className=''>
@@ -82,7 +92,7 @@ function Home() {
               <div className='col-lg-7 col-12 py-lg-0 py-md-0 py-2 slide-right visible'>
                 <p>KlinicQ is our Electronic Clinical Management System (e CMS) application. Electronic Clinical Management System (e CMS) application. It is user-friendly, convenient, comprehensive, and integrated to manage all hospital operations safely and with no manual error usually associated with handwriting & paper-based records.</p>
               </div>
-              <div className='col-2 d-lg-block d-md-block d-none slide-right visible'>
+              <div className='col-2 d-lg-block d-none slide-right visible'>
                 <div className='arrow-section'>
                   <FontAwesomeIcon icon={faArrowRight} spin style={{ color: '#FFF' }} className='icon' />
                 </div>
@@ -149,9 +159,9 @@ function Home() {
               <div className='search-list search-option'>
                 <div className='d-flex align-items-center'>
                   <FontAwesomeIcon icon={faSearch} style={{ color: '#01285C', fontSize: '30px' }} />
-                  <div>
-                    <label className='ps-3'>Apollo hospital</label><br />
-                    <input placeholder='Apollo hospital' className='border-0 ps-3 mt-2' />
+                  <div className='ps-3'>
+                    <label className=''>Apollo hospital</label><br />
+                    <input placeholder='Apollo hospital' className='border-0 mt-2' />
                   </div>
                 </div>
               </div>
@@ -214,7 +224,25 @@ function Home() {
               <div className='col-lg-6 col-12 slide-left visible'>
                 <h1 className='mb-4'>Rest assured, your health is in the most capable hands.</h1>
                 <p className='mb-3'>With medical professionals in more than 100+ countries and a 98% customer satisfaction rate, Doctoralia offers reliable health information. With an extensive network of doctors, we are able to offer a wide range of high quality medical tests. What's more, our prices are up to 70% cheaper than other online providers.</p>
-                <div className='d-flex'>
+                <div className='d-lg-block d-md-block d-sm-block d-none'>
+                  <div className='d-flex'>
+                    <div className='d-flex align-items-center'>
+                      <img src={rest2} />
+                      <div className='mar-top'>
+                        <label className='ps-lg-3 ps-md-3 ps-0'>Available</label><br />
+                        <p className='mb-0 ps-lg-3 ps-md-3 ps-0'>900+ specialists</p>
+                      </div>
+                    </div>
+                    <div className='d-flex align-items-center mx-4 py-5'>
+                      <img src={rest1} />
+                      <div className='mar-top'>
+                        <label className='ps-lg-3 ps-md-3 ps-0'>Available</label><br />
+                        <p className='mb-0 ps-lg-3 ps-md-3 ps-0'>900+ specialists</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='d-lg-none d-md-none d-sm-none d-block'>
                   <div className='d-flex align-items-center'>
                     <img src={rest2} />
                     <div className='mar-top'>
@@ -222,9 +250,9 @@ function Home() {
                       <p className='mb-0 ps-lg-3 ps-md-3 ps-0'>900+ specialists</p>
                     </div>
                   </div>
-                  <div className='d-flex align-items-center mx-4 py-5'>
+                  <div className='d-flex align-items-center pb-3'>
                     <img src={rest1} />
-                    <div className='mar-top'>
+                    <div className='ms-2'>
                       <label className='ps-lg-3 ps-md-3 ps-0'>Available</label><br />
                       <p className='mb-0 ps-lg-3 ps-md-3 ps-0'>900+ specialists</p>
                     </div>
@@ -248,7 +276,7 @@ function Home() {
                 <img src={rest3} className='rest3' />
                 <div className='available'>
                   <div className='d-flex align-items-center p-lg-3 p-md-3 p-1'>
-                    <FontAwesomeIcon icon={faCircleDot} beat style={{ color: '#46E826', fontSize: '20px' }} className='beat-icon'/>
+                    <FontAwesomeIcon icon={faCircleDot} beat style={{ color: '#46E826', fontSize: '20px' }} className='beat-icon' />
                     <div className='mar-top'>
                       <label className=''>Available Specialist</label><br />
                       <p className='mb-0 ps-3'>Select Specialist </p>
@@ -277,14 +305,14 @@ function Home() {
           </div>
         </div>
         <div className='online-section py-5'>
-          <div className='container-80'>
+          <div className='container-85'>
             <div className='row m-0 align-items-center'>
               <div className='col-lg-6 col-12 slide-left visible'>
                 <h1>Get 15-Minutes Complimentary online session.</h1>
                 <p>Limited Period Offer. Claim Now.</p>
                 <button>Book Appoinment <img src={arrowup} /></button>
               </div>
-              <div className='col-lg-6  col-12 slide-right visible'>
+              <div className='col-lg-6  col-12 my-lg-0 mt-4 slide-right visible'>
                 <img src={online} className='w-100' />
               </div>
             </div>
@@ -300,7 +328,7 @@ function Home() {
               <div className='col-lg-7 col-12 py-lg-0 py-md-0 py-2'>
                 <p>Electronic Clinical Management System (e CMS) application. It is user-friendly, convenient, comprehensive, and integrated to manage all hospital operations safely and with no manual error usually associated with handwriting & paper-based records.</p>
               </div>
-              <div className='col-2 d-lg-block d-md-block d-none slide-right visible'>
+              <div className='col-2 d-lg-block d-none slide-right visible'>
                 <div className='arrow-section'>
                   <FontAwesomeIcon icon={faArrowRight} spin style={{ color: '#FFF' }} className='icon' />
                 </div>

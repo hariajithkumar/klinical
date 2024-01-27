@@ -22,11 +22,19 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import location from '../Common/assets/image/location.png'
 import Topmove from '../Common/pages/Topmove'
 
-function Benefits() {
 
+import { useDispatch, useSelector } from 'react-redux'
+import { setClass1Hide } from '../Redux/CreateSlice'
+
+function Benefits() {
+    
+    const { isClass1Show } = useSelector((state) => state.klinical)
+    const dispatch = useDispatch();
 
     useEffect(() => {
+        dispatch(setClass1Hide(false))
         window.scrollTo(0, 0);
+
     }, []);
 
 
@@ -41,7 +49,7 @@ function Benefits() {
                 <div className='container-90'>
                     <div className='row m-0 align-items-center'>
                         <div className='col-lg-6 col-12  slide-left visible'>
-                            <img src={benefits1} className='w-100 d-lg-block d-none'/>
+                            <img src={benefits1} className='w-100 d-lg-block d-none' />
                         </div>
                         <div className='col-lg-6 col-12'>
                             <h5>Increase Revenue</h5>
@@ -72,7 +80,7 @@ function Benefits() {
 
                             </div>
                             <div className='col-lg-6 col-12 slide-right visible'>
-                                <img src={benefits2} className='w-100 d-lg-block d-none'/>
+                                <img src={benefits2} className='w-100 d-lg-block d-none' />
                             </div>
                         </div>
                     </div>
@@ -80,7 +88,7 @@ function Benefits() {
                 <div className='container-90'>
                     <div className='row m-0 align-items-center'>
                         <div className='col-lg-6 col-12 slide-left visible'>
-                            <img src={benefits3} className='w-100 d-lg-block d-none'/>
+                            <img src={benefits3} className='w-100 d-lg-block d-none' />
                         </div>
                         <div className='col-lg-6 col-12 slide-right visible'>
                             <h5>Improve Service Quality</h5>
@@ -111,7 +119,7 @@ function Benefits() {
                                 <p>Our Clinical Management System is designed based on understanding the customer’s needs, and best practices followed across most hospitals/Clinics, which helps your business create an opportunity to build a long-lasting relationship with the customers.</p>
                             </div>
                             <div className='col-lg-6 col-12 slide-right visible'>
-                                <img src={benefits4} className='w-100 d-lg-block d-none'/>
+                                <img src={benefits4} className='w-100 d-lg-block d-none' />
                             </div>
                         </div>
                     </div>
@@ -119,7 +127,7 @@ function Benefits() {
                 <div className='container-90'>
                     <div className='row m-0 align-items-center'>
                         <div className='col-lg-6 col-12 slide-left visible'>
-                            <img src={benefits5} className='w-100 d-lg-block d-none'/>
+                            <img src={benefits5} className='w-100 d-lg-block d-none' />
                         </div>
                         <div className='col-lg-6 col-12 slide-right visible'>
                             <h5>No wait at waiting room </h5>
@@ -148,7 +156,7 @@ function Benefits() {
 
                             </div>
                             <div className='col-lg-6 col-12 slide-right visible'>
-                                <img src={benefits6} className='w-100 d-lg-block d-none'/>
+                                <img src={benefits6} className='w-100 d-lg-block d-none' />
                             </div>
                         </div>
                     </div>
@@ -156,7 +164,7 @@ function Benefits() {
                 <div className='container-90'>
                     <div className='row m-0 align-items-center'>
                         <div className='col-lg-6 col-12 slide-left visible'>
-                            <img src={benefits7} className='w-100 d-lg-block d-none'/>
+                            <img src={benefits7} className='w-100 d-lg-block d-none' />
                         </div>
                         <div className='col-lg-6 col-12 slide-right visible'>
                             <h5>No wait at waiting room </h5>
@@ -186,7 +194,7 @@ function Benefits() {
                                 <p>KlinicQ application can quickly transfer patient data from one system. It helps in the space-saving of a digital records environment, and it helps to reduce operational costs such as transcription services.</p>
                             </div>
                             <div className='col-lg-6 col-12 slide-right visible'>
-                                <img src={benefits8} className='w-100 d-lg-block d-none'/>
+                                <img src={benefits8} className='w-100 d-lg-block d-none' />
                             </div>
                         </div>
                     </div>

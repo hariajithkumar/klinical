@@ -54,6 +54,11 @@
     margin: 0 auto;
 }
 
+section{
+    overflow-x: hidden;
+}
+
+
 
 
 /* animation css start  */
@@ -83,6 +88,8 @@
     opacity: 0;
     transform: translateX(1);
 }
+
+
 
 /* topmove page css  */
 .top-btn{
@@ -322,10 +329,24 @@
     border: 1px solid #D9D9D9;
 }
 
-.search-list input:focus-visible {
+/* .search-list input:focus-visible {
     border: unset !important;
+} */
+.search-list input:focus-visible {
+    border: none !important;
+    padding:  10px 0px;
+    border: 2px solid #006CB5 !important;
+    outline: #006CB5;
+    border-radius: 10px;
 }
-
+.search-list select:focus-visible {
+    width: 100%;
+    border: none !important;
+    padding:  10px 0px;
+    border: 2px solid #006CB5 !important;
+    outline: #006CB5;
+    border-radius: 10px;
+}
 .box {
     display: flex;
     flex-wrap: wrap;
@@ -491,12 +512,12 @@
     line-height: 58px;
 }
 
-.rest-section p {
+/* .rest-section p {
     color: #524E4E;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-}
+} */
 
 .rest-section label {
     color: #6A6A6A;
@@ -1698,6 +1719,10 @@
     .contact-section .form-content h6 {
         width: 30%;
     }
+    .form-content p {
+        width: 80% !important;
+    }
+
 }
 
 @media only screen and (min-width: 300px) and (max-width:576px) {
@@ -1705,7 +1730,10 @@
         max-width: 90% !important;
         margin: 0 auto;
     }
-
+    .container-85{
+        max-width: 100% !important;
+        margin: 0 auto;
+    }
     .section-top h3 {
         font-size: 18px;
         line-height: 28px !important;
@@ -1765,8 +1793,8 @@
     }
 
     .doctor-content p {
-        font-size: 12px;
-        line-height: 18px !important;
+        font-size: 14px;
+        line-height: 24px !important;
     }
 
     .single-click h1 {
@@ -1774,8 +1802,8 @@
     }
 
     .single-click p {
-        font-size: 10px;
-        line-height: 20px !important;
+        font-size: 14px;
+        line-height: 24px !important;
     }
 
     .available {
@@ -1804,8 +1832,8 @@
     }
 
     .rest-section p {
-        font-size: 10px;
-        line-height: 20px !important;
+        font-size: 14px;
+        line-height: 24px !important;
         text-align: start;
         padding-left: 0px !important;
     }
@@ -1963,20 +1991,28 @@
     }
     .small-busniess h1 {
         margin-bottom: 50px;
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 28px;
+        line-height: 38px;
     }
     .small-busniess p {
-        font-size: 12px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 26px;
     }
     .book-section .sub-banner p {
         width: 95%;
-        font-size: 13px;
-        line-height: normal;
+        font-size: 14px;
+        line-height: 24px !important;
     }
     .contact-section .form-content h6 {
         width: 55%;
+    }
+    .form-content {
+        background: #FDFDFD;
+        padding: 20px 10px;
+    }
+    .form-content p {
+        width: 95%;
+        font-size: 14px !important;
     }
 
 }

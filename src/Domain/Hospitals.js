@@ -13,11 +13,19 @@ import patient4 from '../Common/assets/image/patient9.png'
 import patient5 from '../Common/assets/image/patient10.png'
 import Topmove from '../Common/pages/Topmove'
 
+
+import { useDispatch, useSelector } from 'react-redux'
+import { setClass1Hide } from '../Redux/CreateSlice'
+
 function Hospitals() {
 
+    const { isClass1Show } = useSelector((state) => state.klinical)
+    const dispatch = useDispatch();
 
     useEffect(() => {
+        dispatch(setClass1Hide(false))
         window.scrollTo(0, 0);
+
     }, []);
 
 

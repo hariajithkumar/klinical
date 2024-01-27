@@ -13,12 +13,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Topmove from '../Common/pages/Topmove'
 
+
+import { useDispatch, useSelector } from 'react-redux'
+import { setClass1Hide } from '../Redux/CreateSlice'
+
+
 function Bookappointment() {
 
+    const { isClass1Show } = useSelector((state) => state.klinical)
+    const dispatch = useDispatch();
+  
     useEffect(() => {
+        dispatch(setClass1Hide(false))
         window.scrollTo(0, 0);
-      }, []);
-
+  
+    }, []);
+    
     return (
         <div className='book-section'>
             <Header />
@@ -31,7 +41,7 @@ function Bookappointment() {
                 <div className='row m-0'>
                     <div className='col-lg-6 col-12 small-busniess'>
                         <h1>Why Select Our Hospitals For Small Busniess</h1>
-                        <div className='row m-0 w-75'>
+                        <div className='row m-0 w-lg-75 w-md-50 w-100'>
                             <div className='col-2'>
                                 <img src={book1} />
                             </div>

@@ -18,11 +18,19 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import location from '../Common/assets/image/location.png'
 import Topmove from '../Common/pages/Topmove'
 
+import { useDispatch, useSelector } from 'react-redux'
+import { setClass1Hide } from '../Redux/CreateSlice'
+
 function Appointment() {
 
 
+    const { isClass1Show } = useSelector((state) => state.klinical)
+    const dispatch = useDispatch();
+
     useEffect(() => {
+        dispatch(setClass1Hide(false))
         window.scrollTo(0, 0);
+
     }, []);
 
 
@@ -37,7 +45,7 @@ function Appointment() {
                 <div className='container-90'>
                     <div className='row m-0'>
                         <div className='col-lg-6  col-12 slide-left visible'>
-                            <img src={appointment1} className='w-100 d-lg-block d-none'/>
+                            <img src={appointment1} className='w-100 d-lg-block d-none' />
                         </div>
                         <div className='col-lg-6  col-12 slide-right visible'>
                             <h1>Token System</h1>
@@ -70,7 +78,7 @@ function Appointment() {
                                 <p>For appointment services, online payment or pay-at-clinic options are defined by the individual hospitals, and accordingly, the workflow triggers the payment options.</p>
                             </div>
                             <div className='col-lg-6  col-12 slide-right visible'>
-                                <img src={appointment2} className='w-100 d-lg-block d-none'/>
+                                <img src={appointment2} className='w-100 d-lg-block d-none' />
                             </div>
                         </div>
                     </div>
@@ -78,7 +86,7 @@ function Appointment() {
                 <div className='container-90'>
                     <div className='row m-0'>
                         <div className='col-lg-6  col-12 slide-left visible'>
-                            <img src={appointment3} className='w-100 d-lg-block d-none'/>
+                            <img src={appointment3} className='w-100 d-lg-block d-none' />
                         </div>
                         <div className='col-lg-6  col-12 slide-right visible'>
                             <h1>Tele-Consultation</h1>
@@ -110,7 +118,7 @@ function Appointment() {
                                 <p>Doctors/Nurses can electronically prescribe drugs, and it is possible to eliminate the wrong medication prescribed to patients.</p>
                             </div>
                             <div className='col-lg-6  col-12 slide-right visible'>
-                                <img src={appointment4} className='w-100 d-lg-block d-none'/>
+                                <img src={appointment4} className='w-100 d-lg-block d-none' />
                             </div>
                         </div>
                     </div>

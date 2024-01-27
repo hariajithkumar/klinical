@@ -14,10 +14,18 @@ import profile3 from '../Common/assets/image/profile3.png'
 import timeline from '../Common/assets/image/time-line.png'
 import Topmove from '../Common/pages/Topmove'
 
+import { useDispatch, useSelector } from 'react-redux'
+import { setClass1Hide } from '../Redux/CreateSlice'
+
 function About() {
 
+    const { isClass1Show } = useSelector((state) => state.klinical)
+    const dispatch = useDispatch();
+
     useEffect(() => {
+        dispatch(setClass1Hide(false))
         window.scrollTo(0, 0);
+
     }, []);
 
     return (

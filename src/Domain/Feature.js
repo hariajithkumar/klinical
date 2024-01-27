@@ -20,11 +20,18 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import location from '../Common/assets/image/location.png'
 import Topmove from '../Common/pages/Topmove'
 
+import { useDispatch, useSelector } from 'react-redux'
+import { setClass1Hide } from '../Redux/CreateSlice'
+
 function Feature() {
 
+    const { isClass1Show } = useSelector((state) => state.klinical)
+    const dispatch = useDispatch();
 
     useEffect(() => {
+        dispatch(setClass1Hide(false))
         window.scrollTo(0, 0);
+
     }, []);
 
 
@@ -32,7 +39,7 @@ function Feature() {
         <div className='product-section'>
             <Header />
             <div className='sub-banner text-center'>
-                <h1>Product Feature</h1>
+                <h1>Feature</h1>
                 <p>A Clinical Management System (CMS) is a software solution designed to streamline and enhance the administrative and clinical functions within healthcare facilities. It plays a crucial role in managing patient information, improving efficiency, ensuring regulatory compliance, and enhancing overall patient care. Here are some key components and features typically found in a Clinical Management System</p>
             </div>
             <hr className='m-0' style={{ color: '#D9F4FF' }} />
